@@ -17,7 +17,6 @@ class Solution:
         while q and fresh >0:
             for i in range(len(q)):
                 row,col=q.popleft()
-                print(row,col,time)
                 directions=[[0,1],[1,0],[0,-1],[-1,0]]
                 for dr,dc in directions:
                     r,c = row+dr,col+dc
